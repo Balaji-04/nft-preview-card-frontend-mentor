@@ -1,0 +1,153 @@
+/*    variables   */
+:root{
+  --bg: hsl(217, 54%, 11%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --font-size: 18px;
+  --white:  hsl(0, 0%, 100%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-clr: hsl(215, 32%, 27%);
+}
+body{
+  background-color: var(--bg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*   text config   */
+p{
+  font-family: 'Outfit', sans-serif;
+  font-size: var(--font-size);
+  color: var(--white);
+}
+.title{
+  font-weight: 600;
+}
+.title:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+.para{
+  font-weight: 300;
+  color: var(--soft-blue);
+}
+.naduvula{
+  margin: 0px;
+}
+.ether-price{
+  color: var(--cyan);
+}
+.highlight{
+  color: var(--white);
+}
+.highlight:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+.creator-desc{
+  display: inline-block;
+}
+
+/*    img config    */
+.equili-img{
+  position: absolute;
+  top: 0%;
+  height: 300px;
+  width: 300px;
+  border-radius: 16px;
+}
+
+.avatar-img{
+  height: 35px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--white);
+  border-radius: 50%;
+}
+
+/*    line    */
+.line{
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--line-clr);
+  width: 100%;
+}
+
+/*    alignment    */
+.price-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-left{
+  display: flex;
+  align-items: center;
+}
+
+.price-right{
+  display: flex;
+  align-items: center;
+}
+
+.creator{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.whole{
+  background-color: var(--card-bg);
+  width: 300px;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.img-container{
+  height: 300px;
+  width: 300px;
+  border-radius: 16px;
+  position: relative;
+}
+
+/*    attribution styles   */
+.attribution {
+  position: absolute;
+  bottom: 0%;
+  text-align: center;
+}
+.att-para{
+  font-size: 15px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* overlay */
+.overlay{
+  background-color: var(--cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  border-radius: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  opacity: 0;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+}
+.overlay:hover{
+  opacity: 0.8;
+}
+
